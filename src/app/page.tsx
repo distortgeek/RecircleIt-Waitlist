@@ -15,7 +15,7 @@ export default function Home() {
           {/* Header */}
           <header className="text-center space-y-4">
             <h1 className="text-5xl md:text-7xl font-bold text-primary-yellow">
-              RecircleIt
+              RECIRCLEIT
             </h1>
             <p className="text-xl md:text-2xl text-primary-sage max-w-2xl mx-auto">
               Revolutionizing the way we think about circular economy. Coming soon.
