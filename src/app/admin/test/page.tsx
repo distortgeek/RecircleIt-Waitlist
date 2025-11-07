@@ -89,7 +89,7 @@ export default function AdminTestPage() {
                 <p className="text-primary-sage text-sm mb-2">Run this SQL:</p>
                 <code className="block bg-primary-dark-green p-3 rounded text-primary-yellow text-xs overflow-x-auto">
                   INSERT INTO admins (id, email)<br/>
-                  SELECT id, email FROM auth.users WHERE email = '{results.session?.email}';
+                  SELECT id, email FROM auth.users WHERE email = &apos;{results.session?.email}&apos;;
                 </code>
               </div>
             )}
@@ -99,9 +99,9 @@ export default function AdminTestPage() {
                 <p className="text-red-300 font-semibold mb-2">❌ RLS Policy Error</p>
                 <p className="text-primary-sage text-sm mb-2">Run migration 004_fix_admin_rls.sql:</p>
                 <code className="block bg-primary-dark-green p-3 rounded text-primary-yellow text-xs overflow-x-auto">
-                  DROP POLICY IF EXISTS "admins_read_admins" ON admins;<br/>
-                  CREATE POLICY "users_check_own_admin_status" ON admins<br/>
-                  &nbsp;&nbsp;FOR SELECT USING (auth.role() = 'authenticated' AND admins.id = auth.uid());
+                  DROP POLICY IF EXISTS &quot;admins_read_admins&quot; ON admins;<br/>
+                  CREATE POLICY &quot;users_check_own_admin_status&quot; ON admins<br/>
+                  &nbsp;&nbsp;FOR SELECT USING (auth.role() = &apos;authenticated&apos; AND admins.id = auth.uid());
                 </code>
               </div>
             )}

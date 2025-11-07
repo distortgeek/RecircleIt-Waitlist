@@ -84,6 +84,7 @@ export default function AdminPage() {
     return () => {
       subscription.unsubscribe()
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const fetchWaitlist = async () => {
@@ -225,7 +226,7 @@ export default function AdminPage() {
         <div className="text-center space-y-6 max-w-md">
           <div className="text-primary-yellow text-2xl font-bold">Access Denied</div>
           <div className="text-primary-sage space-y-2">
-            <p>You don't have permission to access this page.</p>
+            <p>You don&apos;t have permission to access this page.</p>
             <p className="text-sm text-primary-sage/70">
               Check the browser console (F12) for detailed error messages.
             </p>

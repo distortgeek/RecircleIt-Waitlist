@@ -185,7 +185,7 @@ export default function Countdown({ className = '' }: CountdownProps) {
           animate={{ opacity: 1 }}
           className="text-primary-sage mt-4 text-sm"
         >
-          We've launched! 🎉
+          We&apos;ve launched! 🎉
         </motion.p>
       )}
     </div>

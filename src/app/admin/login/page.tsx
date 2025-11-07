@@ -149,7 +149,7 @@ export default function AdminLoginPage() {
         {isMagicLink ? (
           <div className="text-center space-y-4">
             <p className="text-primary-sage">
-              We've sent a magic link to <strong>{email}</strong>
+              We&apos;ve sent a magic link to <strong>{email}</strong>
             </p>
             <p className="text-primary-sage/60 text-sm">
               Click the link in your email to sign in.
